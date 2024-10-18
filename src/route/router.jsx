@@ -34,7 +34,7 @@ import SEOServices from "../pages/seo-services";
 import PaidAdvertising from "../pages/Paid-Advertising";
 import AppDevelopment from "../pages/App-Development";
 import BusinessAutomation from "../pages/Business-Automation";
-import ImportanceOfUX from "./pages/ImportanceOfUX";
+import ImportanceOfUX from "../pages/importanceofux";
 
 export const router = createBrowserRouter([
     {
