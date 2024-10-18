@@ -34,7 +34,7 @@ import SEOServices from "../pages/seo-services";
 import PaidAdvertising from "../pages/Paid-Advertising";
 import AppDevelopment from "../pages/App-Development";
 import BusinessAutomation from "../pages/Business-Automation";
-import ImportanceOfUX from "../pages/importanceofux";
+import ImportanceOfUX from "../pages/Importance-of-ux";
 
 export const router = createBrowserRouter([
     {
@@ -129,7 +129,7 @@ export const router = createBrowserRouter([
                 element: <GDPRCompliance />
             },
             {
-                path: "/ImportanceOfUX", // New blog route for "The Importance of UX Design"
+                path: "/Importance-of-ux", // New blog route for "The Importance of UX Design"
                 element: <ImportanceOfUX />
             },
             {

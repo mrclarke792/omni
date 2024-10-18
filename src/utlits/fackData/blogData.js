@@ -87,7 +87,7 @@ export const blogData = [
         thumb: blog_img_15, // ensure blog_img_15 is correctly imported
         date: "October 31, 2024",
         author: "Khamare Clarke",
-        link: "/ImportanceOfUX", // ensure it matches the path in the route
+        link: "/Importance-of-ux", // ensure it matches the path in the route
         author_link: "/author"
       },
 ];
