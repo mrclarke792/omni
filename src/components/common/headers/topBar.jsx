@@ -20,7 +20,7 @@ const TopBar = () => {
                             <ul className="list-unstyled ps-0 mb-0 list">
                                 <li className="d-inline-block">
                                     <i className="ri-map-pin-line"></i>
-                                     proudly serving businesses across the globe.
+                                     Proudly serving businesses across the globe.
                                 </li>
                                 <li className="d-inline-block">
                                     <i className="ri-mail-open-line"></i>

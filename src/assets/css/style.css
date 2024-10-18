@@ -390,7 +390,11 @@ Top Header Area Style
 .top-header-list .list li:last-child::before {
   display: none;
 }
-
+@media (max-width: 768px) { /* Adjust the width as needed for your mobile breakpoint */
+  .top-header-list {
+    display: none; /* Hides the top-header-list on mobile */
+  }
+}
 /*=========================================
 Navbar Area Style
 ===========================================*/
