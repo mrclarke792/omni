@@ -9,8 +9,8 @@ const TopBar = () => {
                         <div className="top-header-content">
                             <ul className="list-unstyled ps-0 mb-0 list">
                                 <li>
-                                    <i className="ri-home-5-line"></i>
-                                  All-in-One Digital Partner.  <a href="#"> Let’s have a chat</a>
+                                    <i className=""></i>
+                                  All-in-One Digital Partner.  <a href="Contact"> Let’s have a chat</a>
                                 </li>
                             </ul>
                         </div>

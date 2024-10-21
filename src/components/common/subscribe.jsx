@@ -32,7 +32,12 @@ const Subscribe = () => {
         setFormError(`There was a problem submitting your form: ${JSON.stringify(data.errors)}`);
       }
     } catch (error) {
-      setFormError(`There was a problem submitting your form: ${error.message}`);
+      // Handle network error like "Failed to fetch"
+      if (error.message === 'Failed to fetch') {
+        setFormError('Network error: Unable to submit form. Please check your connection and try again.');
+      } else {
+        setFormError(`There was a problem submitting your form: ${error.message}`);
+      }
     } finally {
       setIsSubmitting(false);
     }
@@ -127,8 +132,8 @@ const Subscribe = () => {
               </div>
             </div>
 
-            {/* Right column: Form */}
-            <div className="col-lg-6">
+              {/* Right column: Form */}
+              <div className="col-lg-6">
               <div className="single-contact-info">
                 <div className="contact-submit d-flex align-items-center justify-content-between">
                   <h3>Join Our Newsletter</h3>
@@ -161,7 +166,8 @@ const Subscribe = () => {
                       )}
                     </div>
                   </form>
-                </div>
+               
+               </div>
               </div>
             </div>
           </motion.div>
