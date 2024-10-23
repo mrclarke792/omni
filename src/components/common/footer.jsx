@@ -55,7 +55,7 @@ const Footer = () => {
                     <div className="single-footer-info">
                       <h3>Contact Us</h3>
                       <ul className="list-unstyled ps-0 mb-0">
-                        <li><strong>Address:</strong> 521684 Majadra Street, Victoria Road, New York</li>
+                        <li><strong>Address:</strong> 52 Victoria Road, Stoke On Trent</li>
                         <li><strong>Email:</strong> <a className="text-decoration-none" href="mailto:info@omnidigitalsolutions.ai">info@omnidigitalsolutions.ai</a></li>
                         <li><strong>Phone:</strong> <a className="text-decoration-none" href="tel:+555472543526">+44 747 3255 886</a></li>
                       </ul>
