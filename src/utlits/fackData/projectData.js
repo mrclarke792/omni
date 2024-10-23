@@ -7,37 +7,42 @@ import projectImg_5 from "../../assets/images/projects/projects-5.jpg";
 export const projectData = [
     {
         id: 1,
-        project_name: "Roofing Company Website Development",
+        project_name: "UpgradeRoofs",
         details: "Built a responsive website on WordPress for a roofing company, incorporating SEO strategies and paid ads to enhance online visibility and lead generation.",
         src: projectImg_1,
-        cta: "Discover More" // Added call to action for consistency
+        cta: "View Site",
+        url: "https://upgraderoofs.co.uk" // Add the actual website URL here
     },
     {
         id: 2,
-        project_name: "Number Surity Dental Agency",
+        project_name: "Surity Dental Agency",
         details: "Developed a dental agency website using React.js and Bootstrap, implementing SEO services to improve search engine rankings and patient engagement.",
         src: projectImg_2,
-        cta: "Discover More" // Added call to action for consistency
+        cta: "View Site",
+        url: "https://surityagency.com" // Add the actual website URL here
     },
     {
         id: 3,
         project_name: "Queens Beauty Clinic",
         details: "Created a visually appealing e-commerce website for Queens Beauty Clinic using Shopify, including integrated SEO services for enhanced online reach.",
         src: projectImg_3,
-        cta: "Discover More" // Added call to action for consistency
+        cta: "View Site",
+        url: "https://queensbeautyclinic.com" // Add the actual website URL here
     },
     {
         id: 4,
         project_name: "Yenique Aesthetics",
         details: "Built a professional website for Yenique Aesthetics using HTML, CSS, and JavaScript, with a focus on SEO services to attract more clients.",
         src: projectImg_4,
-        cta: "Discover More" // Added call to action for consistency
+        cta: "View Site",
+        url: "https://yeniqueaesthetics.com" // Add the actual website URL here
     },
     {
         id: 5,
-        project_name: "Trademan Directory",
+        project_name: "MyApproved",
         details: "Developed a directory platform for tradesmen using React.js, offering SEO services and paid ad campaigns for business automation and increased visibility.",
         src: projectImg_5,
-        cta: "Discover More" // Added call to action for consistency
+        cta: "View Site",
+        url: "https://myapproved.co.uk" // Add the actual website URL here
     },
 ];

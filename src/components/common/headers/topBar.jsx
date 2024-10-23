@@ -2,7 +2,7 @@ import React from 'react';
 
 const TopBar = () => {
     return (
-        <div className="top-header-area top-bar">
+        <div className="top-header-area top-bar hide-on-mobile">
             <div className="container-fluid">
                 <div className="row align-items-center">
                     <div className="col-lg-4">
@@ -10,7 +10,7 @@ const TopBar = () => {
                             <ul className="list-unstyled ps-0 mb-0 list">
                                 <li>
                                     <i className=""></i>
-                                  All-in-One Digital Partner.  <a href="Contact"> Let’s have a chat</a>
+                                    All-in-One Digital Partner. <a href="Contact"> Let’s have a chat</a>
                                 </li>
                             </ul>
                         </div>
@@ -20,7 +20,7 @@ const TopBar = () => {
                             <ul className="list-unstyled ps-0 mb-0 list">
                                 <li className="d-inline-block">
                                     <i className="ri-map-pin-line"></i>
-                                     Proudly serving businesses across the globe.
+                                    Proudly serving businesses across the globe.
                                 </li>
                                 <li className="d-inline-block">
                                     <i className="ri-mail-open-line"></i>

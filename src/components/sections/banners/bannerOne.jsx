@@ -59,8 +59,8 @@ const BannerOne = () => {
                     <div className="col-lg-6">
                         <div className="banner-content">
                             <div className="title">
-                                <p>Get Your Business Flourish with </p> {/* Intro text */}
-                                <h1 id="typewriter">{text}</h1> {/* Typewriter effect */}
+                                <p>Get Your Business Flourishing With</p> {/* Intro text */}
+                                <h1 id="typewriter" style={{ fontFamily: `"Segoe UI", "Apple Color Emoji", "Noto Color Emoji", sans-serif` }}>{text}</h1> {/* Typewriter effect */}
                              
                             </div>
                             <div style={{marginTop:"50px"}} className="banner-button d-flex align-items-center">

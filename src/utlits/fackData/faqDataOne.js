@@ -7,7 +7,7 @@ export const FaqDataOne = [
     {
         id: "two",
         question: "How can SEO improve my website's visibility?",
-        ans: `SEO enhances your website's visibility by optimizing its structure and content, improving keyword rankings, and increasing organic traffic through targeted strategies. This leads to better search engine rankings, more qualified visitors, and higher conversion rates.`,
+        ans: `SEO enhances your website's visibility by optimising its structure and content, improving keyword rankings, and increasing organic traffic through targeted strategies. This leads to better search engine rankings, more qualified visitors, and higher conversion rates.`,
     },
     {
         id: "three",

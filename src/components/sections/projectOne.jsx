@@ -48,22 +48,26 @@ const ProjectOne = () => {
                 >
                     <ul className="main-box">
                         {
-                            projectData.map(({ id, details, project_name, src }) => {
-                                return (
-                                    <li key={id} className={`box bg-${id} ${activeIndex === id ? 'active' : ''}`} onMouseEnter={() => handleMouseEnter(id)}>
-                                        <span>
-                                            <img src={src} alt="projects-image" />
-                                        </span>
-                                        <div className="detail">
-                                            <div className="content">
-                                                <h3>
-                                                    <Link className="text-decoration-none" to="/service-details">{project_name}</Link>
-                                                </h3>
-                                                <p>{details}</p>
-                                                <Link className="read-more text-decoration-none" to="/service-details">
-                                                    Read More
-                                                    <i className="ri-arrow-right-line"></i>
-                                                </Link>
+ projectData.map(({ id, details, project_name, src, cta, url }) => {
+    return (
+        <li key={id} className={`box bg-${id} ${activeIndex === id ? 'active' : ''}`} onMouseEnter={() => handleMouseEnter(id)}>
+            <span>
+                <img src={src} alt="projects-image" />
+            </span>
+            <div className="detail">
+                <div className="content">
+                    {/* Use <a> for the project name to navigate externally */}
+                    <h3>
+                        <a className="text-decoration-none" href={url} target="_blank" rel="noopener noreferrer">
+                            {project_name}
+                        </a>
+                    </h3>
+                    <p>{details}</p>
+                    {/* Use <a> for "View Site" to navigate externally */}
+                    <a className="read-more text-decoration-none" href={url} target="_blank" rel="noopener noreferrer">
+                        {cta}
+                        <i className="ri-arrow-right-line"></i>
+                    </a>
                                             </div>
                                         </div>
                                     </li>

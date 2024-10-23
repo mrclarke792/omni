@@ -32,10 +32,10 @@ const App = () => {
 
       {/* Partner Area Section */}
       <div className="partner-area style-2 pb-75">
-        <div className="container">
-          <PartnersSlider data={partnerDataTwo} />
+          <div className="container">
+            <PartnersSlider data={partnerDataTwo} />
+          </div>
         </div>
-      </div>
 
       <AboutOne />
       <ServicesOne />

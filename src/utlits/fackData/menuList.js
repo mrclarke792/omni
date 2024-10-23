@@ -46,11 +46,6 @@ export const menuList = [
                 path: "/service-details",
                 label: "Service Details",
             },
-            {
-                id: 7,
-                path: "/importance-of-ux-design", // Update path to match the blog URL
-                label: "Importance of UX Design",  // Label describing the blog content
-            }
             
         ]
     },

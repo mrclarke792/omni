@@ -394,6 +394,13 @@ Top Header Area Style
   .top-header-list {
     display: none; /* Hides the top-header-list on mobile */
   }
+  /* Hide the section on mobile devices */
+
+@media (max-width: 767px) {
+  .image-1 {
+    display: none;
+  }
+}
 }
 /*=========================================
 Navbar Area Style
@@ -2635,7 +2642,7 @@ Pricing Area Style
 Testimonial Area Style
 ===========================================*/
 .single-testimonial-card {
-  padding: 35px;
+  padding: 55px;
   margin-bottom: 25px;
   border-radius: 0px 30px;
   background-color: var(--whiteColor);

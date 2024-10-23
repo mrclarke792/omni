@@ -1,5 +1,5 @@
 import React from 'react'
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 import { Link } from 'react-router-dom'
 
 import { zoomIn } from '../../../utlits/zoomIn'
@@ -11,9 +11,9 @@ import ServiceIconSeven from '../../../assets/icons/serviceIconSeven'
 const ServicesOne = () => {
     return (
         <div className="services-area style-2 pb-75">
-            <div className="container"  style={{marginTop:"50px"}} >
-            <Title sectionName={"Our Services"} sectionTitle={"Expert Web Development, SEO & Digital Automation"} style={"style-2"} />
-                <div className="row" >
+            <div className="container" style={{ marginTop: "50px" }}>
+                <Title sectionName={"Our Services"} sectionTitle={"Expert Web Development, SEO & Digital Automation"} style={"style-2"} />
+                <div className="row">
                     {
                         servicesDataOne.map(({ id, link, service_details, service_name, src }) => {
                             return (
@@ -28,10 +28,10 @@ const ServicesOne = () => {
                                             {src()}
                                         </div>
                                         <h3>
-                                            <Link className="text-decoration-none" href={link}>{service_name}</Link>
+                                            <Link className="text-decoration-none" to={link}>{service_name}</Link>
                                         </h3>
                                         <p>{service_details}</p>
-                                        <Link className="read-more text-decoration-none" href={link}>
+                                        <Link className="read-more text-decoration-none" to={link}>
                                             Read More
                                             <i className="ri-arrow-right-line"></i>
                                         </Link>
