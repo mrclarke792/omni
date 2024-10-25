@@ -15,12 +15,11 @@ const BannerOne = () => {
     const [typingSpeed, setTypingSpeed] = useState(100);
 
     const messages = [
-        "Boost Your Online Presence🚀",
-        "Professional Websites🖥️",
-        "Cutting-Edge Mobile Apps📱",
-        "Ignite Your SEO🔥",
-        "Achieve Converting Ads📈",
-        "Automate Your Business🤖"
+        "Custom Websites",
+        "Mobile Apps ",
+        "SEO Rankings",
+        "Targeted Ads",
+        "Ai Automation"
     ];
 
     useEffect(() => {
@@ -59,25 +58,25 @@ const BannerOne = () => {
                     <div className="col-lg-6">
                         <div className="banner-content">
                             <div className="title">
-                                <p>Get Your Business Flourishing With</p> {/* Intro text */}
-                                <h1 id="typewriter" style={{ fontFamily: `"Segoe UI", "Apple Color Emoji", "Noto Color Emoji", sans-serif` }}>{text}</h1> {/* Typewriter effect */}
+                                <p>Take Your Business to the Next Level with </p> {/* SEO-friendly intro text */}
+                                <h1 id="typewriter" style={{ fontFamily: `"Segoe UI", "Apple Color Emoji", "Noto Color Emoji", sans-serif` }}>{text}</h1> {/* Typewriter effect with compelling copy */}
                              
                             </div>
                             <div style={{marginTop:"50px"}} className="banner-button d-flex align-items-center">
-                                <Link className="demo text-decoration-none" to="/contact">Request a Free Consultation Today!</Link>
+                                <Link className="demo text-decoration-none" to="/contact" aria-label="Request a Free Consultation">Request Your Free Consultation Today!</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-6">
                         <div className="banner-image">
-                            <img src={hero_bg} alt="banner-image" />
+                            <img src={hero_bg} alt="Boost Your Business with Omni Digital Solutions" /> {/* Updated alt text for SEO */}
                         </div>
                     </div>
                 </motion.div>
             </div>
             <div className="shape">
                 <div className="shape-2">
-                    <img src={shap_2} alt="shape" />
+                    <img src={shap_2} alt="Decorative shape" /> {/* Updated alt text for accessibility */}
                 </div>
             </div>
             <ModalVideo

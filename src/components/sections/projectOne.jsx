@@ -1,11 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
-import { Link } from 'react-router-dom';
 import { projectData } from '../../utlits/fackData/projectData';
 import { slideUp } from '../../utlits/slideUp';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick"; // Import the Slider component
 
 const ProjectOne = () => {
     const [activeIndex, setActiveIndex] = useState(5);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 767); // State to check if mobile
+    const projectListRef = React.useRef(null); // Ref for the project list
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 767); // Update mobile state on resize
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup event listener on unmount
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     useEffect(() => {
         const slideCount = document.querySelectorAll('.main-box li').length - 1;
@@ -15,6 +30,18 @@ const ProjectOne = () => {
 
     const handleMouseEnter = (index) => {
         setActiveIndex(index);
+    };
+
+    const scrollRight = () => {
+        if (projectListRef.current) {
+            projectListRef.current.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    };
+
+    const scrollLeft = () => {
+        if (projectListRef.current) {
+            projectListRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+        }
     };
 
     return (
@@ -35,7 +62,7 @@ const ProjectOne = () => {
                         </div>
                         <div className="col-lg-5 col-md-4">
                             <div className="button text-end">
-                                <a className="demo text-decoration-none" href="contact.html">View All Projects</a>
+                                <a className="demo text-decoration-none" href="contact">View All Projects</a>
                             </div>
                         </div>
                     </motion.div>
@@ -46,35 +73,77 @@ const ProjectOne = () => {
                     variants={slideUp()}
                     viewport={{ once: true, amount: 0.4 }}
                 >
-                    <ul className="main-box">
-                        {
- projectData.map(({ id, details, project_name, src, cta, url }) => {
-    return (
-        <li key={id} className={`box bg-${id} ${activeIndex === id ? 'active' : ''}`} onMouseEnter={() => handleMouseEnter(id)}>
-            <span>
-                <img src={src} alt="projects-image" />
-            </span>
-            <div className="detail">
-                <div className="content">
-                    {/* Use <a> for the project name to navigate externally */}
-                    <h3>
-                        <a className="text-decoration-none" href={url} target="_blank" rel="noopener noreferrer">
-                            {project_name}
-                        </a>
-                    </h3>
-                    <p>{details}</p>
-                    {/* Use <a> for "View Site" to navigate externally */}
-                    <a className="read-more text-decoration-none" href={url} target="_blank" rel="noopener noreferrer">
-                        {cta}
-                        <i className="ri-arrow-right-line"></i>
-                    </a>
+                    {/* Conditional rendering for mobile carousel */}
+                    {isMobile ? (
+                        <div className="mobile-carousel">
+                            <Slider
+                                dots={true}
+                                infinite={true}
+                                speed={500}
+                                slidesToShow={1}
+                                slidesToScroll={1}
+                                arrows={false} // Disable arrows on mobile
+                                prevArrow={<span style={{ display: 'none' }} />} // Hide "Previous" text
+                                nextArrow={<span style={{ display: 'none' }} />} // Hide "Next" text
+                            >
+                                {
+                                    projectData.map(({ id, details, project_name, src, cta, url }) => (
+                                        <div key={id} className={`box bg-${id}`}>
+                                            <span>
+                                                <img src={src} alt="projects-image" />
+                                            </span>
+                                            <div className="detail">
+                                                <div className="content">
+                                                    <h3>
+                                                        <a className="text-decoration-none" href={url} target="_blank" rel="noopener noreferrer">
+                                                            {project_name}
+                                                        </a>
+                                                    </h3>
+                                                    <p>{details}</p>
+                                                    <a className="read-more text-decoration-none" href={url} target="_blank" rel="noopener noreferrer">
+                                                        {cta}
+                                                        <i className="ri-arrow-right-line"></i>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </li>
-                                );
-                            })
-                        }
-                    </ul>
+                                    ))
+                                }
+                            </Slider>
+                        </div>
+                    ) : (
+                        <>
+                            <ul className="main-box" ref={projectListRef}>
+                                {
+                                    projectData.map(({ id, details, project_name, src, cta, url }) => (
+                                        <li 
+                                            key={id} 
+                                            className={`box bg-${id} ${activeIndex === id ? 'active' : ''}`} 
+                                            onMouseEnter={() => handleMouseEnter(id)}
+                                        >
+                                            <span>
+                                                <img src={src} alt="projects-image" />
+                                            </span>
+                                            <div className="detail">
+                                                <div className="content">
+                                                    <h3>
+                                                        <a className="text-decoration-none" href={url} target="_blank" rel="noopener noreferrer">
+                                                            {project_name}
+                                                        </a>
+                                                    </h3>
+                                                    <p>{details}</p>
+                                                    <a className="read-more text-decoration-none" href={url} target="_blank" rel="noopener noreferrer">
+                                                        {cta}
+                                                        <i className="ri-arrow-right-line"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </>
+                    )}
                 </motion.div>
             </div>
         </div>

@@ -8,7 +8,7 @@ export const projectData = [
     {
         id: 1,
         project_name: "UpgradeRoofs",
-        details: "Built a responsive website on WordPress for a roofing company, incorporating SEO strategies and paid ads to enhance online visibility and lead generation.",
+        details: "Modern website using WordPress, focusing on SEO services to increase online visibility and customer engagement.",
         src: projectImg_1,
         cta: "View Site",
         url: "https://upgraderoofs.co.uk" // Add the actual website URL here
@@ -16,7 +16,7 @@ export const projectData = [
     {
         id: 2,
         project_name: "Surity Dental Agency",
-        details: "Developed a dental agency website using React.js and Bootstrap, implementing SEO services to improve search engine rankings and patient engagement.",
+        details: "Designed a professional website for Surity Dental Agency using WordPress, with a focus on SEO services to attract more clients.",
         src: projectImg_2,
         cta: "View Site",
         url: "https://surityagency.com" // Add the actual website URL here
@@ -24,7 +24,7 @@ export const projectData = [
     {
         id: 3,
         project_name: "Queens Beauty Clinic",
-        details: "Created a visually appealing e-commerce website for Queens Beauty Clinic using Shopify, including integrated SEO services for enhanced online reach.",
+        details: "Developed a professional website for Queens Beauty Clinic using Shopify, with a focus on SEO services to attract more clients.",
         src: projectImg_3,
         cta: "View Site",
         url: "https://queensbeautyclinic.com" // Add the actual website URL here
@@ -32,7 +32,7 @@ export const projectData = [
     {
         id: 4,
         project_name: "Yenique Aesthetics",
-        details: "Built a professional website for Yenique Aesthetics using HTML, CSS, and JavaScript, with a focus on SEO services to attract more clients.",
+        details: "Developed a professional website for Yenique Aesthetics using WordPress, with a focus on SEO services to attract more clients.",
         src: projectImg_4,
         cta: "View Site",
         url: "https://yeniqueaesthetics.com" // Add the actual website URL here
@@ -40,7 +40,7 @@ export const projectData = [
     {
         id: 5,
         project_name: "MyApproved",
-        details: "Developed a directory platform for tradesmen using React.js, offering SEO services and paid ad campaigns for business automation and increased visibility.",
+        details: "Developed a professional website for MyApproved using WordPress, with a focus on SEO services to attract more clients.",
         src: projectImg_5,
         cta: "View Site",
         url: "https://myapproved.co.uk" // Add the actual website URL here

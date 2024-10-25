@@ -46,7 +46,7 @@ const Footer = () => {
                   <Link className="text-decoration-none logo" to="/">
                     <img src={logo} alt="Omni Digital Solutions Logo" />
                   </Link>
-                  <p>At Omni Digital Solutions, we know that navigating the digital landscape can be challenging. Our mission is to simplify your journey by providing expert web and app development, cutting-edge SEO solutions, and effective paid advertising strategies that drive your business's online success.</p>
+                  <p>At Omni Digital Solutions, we know that navigating the digital landscape can be challenging. Our mission is to simplify your journey by providing expert web and app development, cutting-edge SEO solutions, and effective paid advertising strategies that drive your business' online success.</p>
                 </div>
               </div>
               <div className="col-lg-8">

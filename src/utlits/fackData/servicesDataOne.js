@@ -24,7 +24,7 @@ export const servicesDataOne = [
     },
     {
         id: 3,
-        service_name: "PPC Paid Ads",
+        service_name: "PPC - Paid Ads",
         service_details: "Strategically increase your online presence with targeted PPC campaigns. Our specialists design and manage campaigns across various platforms, ensuring maximum return on investment and higher conversion rates.",
         link: "/paid-advertising",
         src: ServiceIconNine,

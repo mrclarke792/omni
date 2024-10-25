@@ -33,7 +33,7 @@ const AboutOne = () => {
           <div className="title">
             <span className="d-block">About Omni Digital Solutions</span>
             <h2>Your Trusted Partner for Digital Success</h2>
-            <p> We’re not just a service provider—we're your Digital Partner, proudly supporting over 200 businesses across various industries. Specializing in full-stack web and app development, paid advertising, and digital automation, we deliver comprehensive digital solutions that elevate every aspect of your business's online presence. Our team of expert developers, marketers, and AI specialists are committed to pushing boundaries and delivering groundbreaking results.</p>
+            <p> We’re not just a service provider—we're your Digital Partner, proudly supporting over 200 businesses across various industries. Specializing in full-stack web and app development, paid advertising, and digital automation, we deliver comprehensive digital solutions that elevate every aspect of your business online presence. Our team of expert developers, marketers, and AI specialists are committed to pushing boundaries and delivering groundbreaking results.</p>
           </div>
           <div className="content-card d-flex align-items-center">
             <div className="icon">
@@ -41,7 +41,7 @@ const AboutOne = () => {
             </div>
             <div className="content">
               <h3>Global Reach</h3>
-              <p>With a portfolio of over 200 businesses, we craft bespoke digital strategies that position you at the forefront of your industry. Whether you’re an ambitious startup or an established enterprise, our solutions enhance your digital experience, sharpen your competitive edge, and promote sustainable growth.</p>
+              <p>With a portfolio of over 200 businesses and counting, we craft bespoke digital strategies that position you at the forefront of your industry. Whether you’re an ambitious startup or an established enterprise, our solutions enhance your digital experience, sharpen your competitive edge, and promote sustainable growth.</p>
             </div>
           </div>
           <div className="content-card d-flex align-items-center">

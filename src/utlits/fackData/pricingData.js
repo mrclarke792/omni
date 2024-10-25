@@ -30,7 +30,7 @@ export const PricingData = [
     link: "https://link.omnidigitalsolutions.ai/payment-link/669a51008dc9123a8cbfb9e8",
     features: [
       "Responsive Design",
-      "Advanced SEO Optimization",
+      "Advanced SEO Optimisation",
       "Contact Forms & Lead Generation",
       "Free Hosting (1 Year)",
       "E-commerce Integration",
@@ -62,7 +62,7 @@ export const PricingData = [
       "Advanced Analytics Dashboard",
       "Ongoing Support & Maintenance",
       "Integrated Marketing Automation",
-      "Customizable Client Portal",
+      "Customisable Client Portal",
     ],
     benefit: "This package is perfect for businesses needing a tailored, high-performance website that maximizes conversions and keeps your online presence secure and scalable.",
   },
