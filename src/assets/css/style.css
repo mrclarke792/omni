@@ -939,7 +939,12 @@ Others Option For Responsive Area Style
   position: absolute;
   right: 0;
 }
-
+/* Hides elements with the "hide-on-mobile" class on mobile devices */
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
 /*=========================================
 Hero Area Style
 ===========================================*/
