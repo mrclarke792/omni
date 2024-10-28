@@ -1,5 +1,6 @@
-import React from 'react'; 
+import React from 'react';  
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet'; // Import Helmet
 import ServiceCardFour from '../components/sections/services/serviceCardFour';
 import service_bg from '../assets/images/services/services-5.jpg';
 import SideBar from '../components/sections/sideBar';
@@ -9,10 +10,26 @@ import { zoomIn } from '../utlits/zoomIn';
 import { slideUp } from '../utlits/slideUp';
 import { servicesDataFour } from '../utlits/fackData/servicesDataFour';
 
-
 const AppDevelopment = () => {
   return (
     <>
+      <Helmet>
+        <title>App Development | Omni Digital Solutions</title>
+        <meta name="description" content="Cutting-edge app development tailored for your business needs." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "http://schema.org",
+            "@type": "Service",
+            "name": "App Development",
+            "description": "Cutting-edge app development tailored for your business needs.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Omni Digital Solutions",
+              "url": "https://www.omnidigitalsolutions.ai"
+            }
+          })}
+        </script>
+      </Helmet>
       <PageTitle link="/app-development" pageName="App Development Services" />
       <div className="services-details-area pt-100 pb-75">
         <div className="container">

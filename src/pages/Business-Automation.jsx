@@ -8,10 +8,16 @@ import { ScrollRestoration } from 'react-router-dom';
 import { zoomIn } from '../utlits/zoomIn';
 import { slideUp } from '../utlits/slideUp';
 import { servicesDataFour } from '../utlits/fackData/servicesDataFour';
+import { Helmet } from 'react-helmet'; // Import Helmet
 
 const BusinessAutomation = () => {
   return (
     <>
+      <Helmet>
+        <title>Business Automation Services | Omni Digital Solutions</title>
+        <meta name="description" content="Enhance your operational efficiency with our tailored business automation services at Omni Digital Solutions." />
+      </Helmet>
+      
       <PageTitle link="/Business-Automation" pageName="Business Automation Services" />
       <div className="services-details-area pt-100 pb-75">
         <div className="container">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import { Helmet } from 'react-helmet'; // Import Helmet
 import ServiceCardFour from '../components/sections/services/serviceCardFour';
 import service_bg from '../assets/images/services/services-5.jpg';
 import SideBar from '../components/sections/sideBar';
@@ -13,6 +13,11 @@ import { servicesDataFour } from '../utlits/fackData/servicesDataFour';
 const WebDevelopment = () => {
   return (
     <>
+      <Helmet>
+        <title>Web Development Services | Omni Digital Solutions</title>
+        <meta name="description" content="Transform your business with our professional web development services at Omni Digital Solutions." />
+      </Helmet>
+
       <PageTitle link="/web-development" pageName="Web Development Services" />
       <div className="services-details-area pt-100 pb-75">
         <div className="container">

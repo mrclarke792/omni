@@ -10,7 +10,7 @@ const TopBar = () => {
                             <ul className="list-unstyled ps-0 mb-0 list">
                                 <li>
                                     <i className=""></i>
-                                    All-in-One Digital Partner. <a href="Contact"> Let’s have a chat</a>
+                                    All-in-One Digital Partner.
                                 </li>
                             </ul>
                         </div>

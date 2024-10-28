@@ -1,5 +1,7 @@
 import React from 'react'; 
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet'; // Import Helmet
+
 import ServiceCardFour from '../components/sections/services/serviceCardFour';
 import service_bg from '../assets/images/services/services-5.jpg';
 import SideBar from '../components/sections/sideBar';
@@ -12,6 +14,11 @@ import { servicesDataFour } from '../utlits/fackData/servicesDataFour';
 const PaidAdvertising = () => {
   return (
     <>
+      <Helmet>
+        <title>Paid Advertising Services | Omni Digital Solutions</title>
+        <meta name="description" content="Elevate your growth with expert paid advertising services that drive traffic and increase conversions at Omni Digital Solutions." />
+      </Helmet>
+
       <PageTitle link="/Paid-Advertising" pageName="Paid-Advertising" />
       <div className="services-details-area pt-100 pb-75">
         <div className="container">
