@@ -62,7 +62,7 @@ const ProjectOne = () => {
                         </div>
                         <div className="col-lg-5 col-md-4">
                             <div className="button text-end">
-                                <a className="demo text-decoration-none" href="contact">View All Projects</a>
+                                <a className="demo text-decoration-none" href="contact">Lets Talk</a>
                             </div>
                         </div>
                     </motion.div>

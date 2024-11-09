@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet'; // Import Helmet
 
 import ServiceCardFour from '../components/sections/services/serviceCardFour';
 import service_bg from '../assets/images/services/services-5.jpg';
@@ -13,6 +14,11 @@ import { servicesDataFour } from '../utlits/fackData/servicesDataFour';
 const SEOServices = () => {
   return (
     <>
+      <Helmet>
+        <title>SEO Services | Omni Digital Solutions</title>
+        <meta name="description" content="Boost your online visibility with expert SEO services tailored to your business needs at Omni Digital Solutions." />
+      </Helmet>
+
       <PageTitle link="/seo-services" pageName="SEO Services" />
       <div className="services-details-area pt-100 pb-75">
         <div className="container">
